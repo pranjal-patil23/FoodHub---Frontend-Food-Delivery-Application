@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Foodie</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ===== Cart Page CSS ===== */
+    .cart-section {
+        max-width: 900px;
+        margin: 30px auto;
+        padding: 0 20px;
+    }
+
+    .cart-items {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cart-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #fff8f0;
+        border-radius: 12px;
+        padding: 15px 20px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .cart-item:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    .cart-item img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-right: 20px;
+    }
+
+    .cart-item div p {
+        margin: 5px 0;
+        font-size: 16px;
+    }
+
+    .cart-item input[type="number"] {
+        width: 50px;
+        padding: 3px 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .cart-item button {
+        padding: 8px 15px;
+        background: #ff3f00;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .cart-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 25px;
+    }
+
+    .place-order {
+        padding: 12px 25px;
+        background: #28a745;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background 0.2s;
+    }
+
+    .place-order:hover {
+        background: #218838;
+    }
+
+    @media screen and (max-width: 600px) {
+        .cart-item {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .cart-item img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+        }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Foodie</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="login.html">Login</a></li>
+    </ul>
+  </nav>
+
+  <section class="cart-section">
+    <h2>Your Cart</h2>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-footer">
+      <h3>Total: ₹<span id="total">0</span></h3>
+      <button id="placeOrder" class="place-order">Place Order</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

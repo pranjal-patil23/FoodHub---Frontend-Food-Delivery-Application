@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Signup - Foodie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Foodie</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#menu">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <!-- Login / Signup Section -->
+    <section class="login-section" style="padding-top:100px; text-align:center;">
+        <h2>Login / Signup</h2>
+        <form id="loginForm" style="max-width:400px;margin:auto;">
+            <input type="email" id="email" placeholder="Email" required style="width:100%;padding:10px;margin:10px 0;">
+            <input type="password" id="password" placeholder="Password" required style="width:100%;padding:10px;margin:10px 0;">
+            <input type="password" id="confirmPassword" placeholder="Confirm Password (for Signup)" style="width:100%;padding:10px;margin:10px 0;">
+            <button type="submit" style="padding:10px 20px;background-color:#ff6b01;color:white;border:none;border-radius:5px;cursor:pointer;">Submit</button>
+        </form>
+    </section>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit",(e)=>{
+            e.preventDefault();
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+            const confirm = document.getElementById("confirmPassword").value;
+
+            if(confirm && password !== confirm){
+                alert("Passwords do not match!");
+                return;
+            }
+            alert("Login/Signup successful!");
+            window.location.href = "index.html"; // redirect to home after login
+        });
+    </script>
+</body>
+</html>

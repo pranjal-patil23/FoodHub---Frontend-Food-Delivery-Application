@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Foodie</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Delicious Food Delivered Fast</h1>
+            <p>Order your favorite meals online now!</p>
+            <button onclick="window.location.href='#menu'">Order Now</button>
+        </div>
+        <img src="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg" alt="Delicious Food" class="hero-img">
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <h2>Our Menu</h2>
+        <input type="text" id="search" placeholder="Search for food...">
+        <div class="menu-items" id="menu-items">
+            <!-- Food items will be injected here -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>We deliver the tastiest food straight to your door, hot and fresh.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Email: contact@foodie.com | Phone: +91 12345 67890</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Foodie. All rights reserved.</p>
+        <div class="socials">
+            <a href="#">Instagram</a> | <a href="#">Facebook</a> | <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
