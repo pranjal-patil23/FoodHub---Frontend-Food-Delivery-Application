@@ -52,22 +52,22 @@ Foodie is a modern and responsive food ordering web application built using HTML
 
 ### 🏠 Home Page
 
-![Home]<img width="1457" height="606" alt="image" src="https://github.com/user-attachments/assets/e9458ecb-3153-41ef-859e-d7490a9697ce" />
+<img width="1457" height="606" alt="image" src="https://github.com/user-attachments/assets/e9458ecb-3153-41ef-859e-d7490a9697ce" />
 
 
 ### 🍕 Menu Section
 
-![Menu]<img width="1472" height="850" alt="image" src="https://github.com/user-attachments/assets/24dad409-4a3a-448b-879f-dd8d426a252a" />
+<img width="1472" height="850" alt="image" src="https://github.com/user-attachments/assets/24dad409-4a3a-448b-879f-dd8d426a252a" />
 
 
 ### 🛒 Shopping Cart
 
-![Cart]<img width="1473" height="851" alt="image" src="https://github.com/user-attachments/assets/0766498e-6b74-4632-bfbd-1dc746a13c7f" />
+<img width="1473" height="851" alt="image" src="https://github.com/user-attachments/assets/0766498e-6b74-4632-bfbd-1dc746a13c7f" />
 
 
 ### 🔐 Login Page
 
-![Login]<img width="1478" height="857" alt="image" src="https://github.com/user-attachments/assets/0c8fbcc8-53a1-406e-b281-d4381843aa2e" />
+<img width="1478" height="857" alt="image" src="https://github.com/user-attachments/assets/0c8fbcc8-53a1-406e-b281-d4381843aa2e" />
 
 
 ---
